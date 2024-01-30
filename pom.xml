@@ -66,6 +66,21 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
+        <sonar.organization>bricenogue</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
+        <!-- Pour la couverture de code avec sonarcloud -->
+        <sonar.projectKey>BriceNogue_Java-Industrialisation</sonar.projectKey>
+        <sonar.projectName>Java-Industrialisation</sonar.projectName>
+        <sonar.sources>src/main/java</sonar.sources>
+        <sonar.tests>src/test/java</sonar.tests>
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
+        <sonar.jacoco.reportPaths>target/jacoco.exec</sonar.jacoco.reportPaths>
+
+        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
     </properties>
 
 </project>
