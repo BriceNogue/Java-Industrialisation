@@ -16,7 +16,7 @@ public class ProductServiceIT {
     private Database db = null;
     private ProductService productService;
 
-    private int countBefore = 1;
+    private int countBefore = 1; 
 
     @Before
     public void setUp() throws SQLException {
